@@ -13,4 +13,10 @@ int main() {
 
 stubs.py = `print("Hello world!")`;
 
+stubs.java = `class HelloWorld {
+  public static void main(String[] args) {
+      System.out.println("Hello, World!"); 
+  }
+}`;
+
 export default stubs;

@@ -102,7 +102,7 @@ function App() {
     <div className="App">
       <h1>Online Code Compiler</h1>
       <div>
-        <label>Language:</label>
+        <label>Language: </label>
         <select
           value={language}
           onChange={(e) => {
@@ -116,6 +116,7 @@ function App() {
         >
           <option value="cpp">C++</option>
           <option value="py">Python</option>
+          <option value="java">Java</option>
         </select>
       </div>
       <br />

@@ -1,9 +1,9 @@
 const { exec } = require("child_process");
 
-const executePy = (filepath) => {
+const executeJava = (filepath) => {
   return new Promise((resolve, reject) => {
     exec(
-      `python3 ${filepath}`,
+      `javac ${filepath} && java ${filepath}`,
       (error, stdout, stderr) => {
         error && reject({ error, stderr });
         stderr && reject(stderr);
@@ -14,8 +14,5 @@ const executePy = (filepath) => {
 };
 
 module.exports = {
-  executePy,
+  executeJava,
 };
-
-
-
